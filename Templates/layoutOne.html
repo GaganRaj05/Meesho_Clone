@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styling/common.css')}}">
+</head>
+<body>
+    <div class="nav">
+        <a href="{{url_for('home')}}"><h1>meesho</h1></a>
+        <form action="" method="POST">
+            {{form.search(id="search_input", placeholder="Try Saree,Kurti or Search by Product Code")}}
+        </form>
+        <a href="{{url_for('home')}}">
+            <div class="navLinks">
+                <svg class="icon" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" mr="8" class="sc-pyfCe leNxcK hover" iconSize="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.16 1.872h7.68c.822 0 1.488.666 1.488 1.488v.103H2.672V3.36c0-.822.666-1.488 1.488-1.488ZM2.672 5.335v11.469h10.656V5.335H2.672Zm0 15.305v-1.964h10.656v1.964c0 .822-.666 1.488-1.488 1.488H4.16a1.488 1.488 0 0 1-1.488-1.488ZM.8 3.36A3.36 3.36 0 0 1 4.16 0h7.68a3.36 3.36 0 0 1 3.36 3.36v17.28A3.36 3.36 0 0 1 11.84 24H4.16A3.36 3.36 0 0 1 .8 20.64V3.36Zm6 16.447a.6.6 0 0 0 0 1.2h2.4a.6.6 0 1 0 0-1.2H6.8Z" fill="#333"></path></svg>
+                <p> Download App      </p>
+                <h1>             |</h1>
+            </div>
+        </a>
+        <a href="{{url_for('home')}}">
+            <div class="navLinks">
+                <p> Become a Seller      </p>
+                <h1>             |</h1>
+            </div>
+        </a>
+        <a href="{{url_for('home')}}">
+            <div class="navLinks">
+                <p> Newsroom      </p>
+                <h1>             |</h1>
+            </div>
+        </a>
+        <a style="margin-left: 15px;" href="{{url_for('home')}}">
+            <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="sc-pyfCe leNxcK hover" mr="8" iconSize="20"><g clip-path="url(#user_svg__a)"><path d="M15.316 13.016c1.512-1.058 2.516-2.797 2.516-4.784A5.835 5.835 0 0 0 12 2.4a5.835 5.835 0 0 0-5.832 5.832 5.79 5.79 0 0 0 2.517 4.784C4.343 14.291 1.2 17.996 1.2 22.37v.022c0 .896.843 1.609 1.825 1.609h17.95c.983 0 1.825-.713 1.825-1.61v-.02c0-4.375-3.143-8.08-7.484-9.354ZM7.853 8.232a4.148 4.148 0 0 1 8.294 0 4.148 4.148 0 0 1-8.294 0Zm13.122 14.083H3.025a.245.245 0 0 1-.14-.032c.054-4.45 4.126-8.057 9.115-8.057 4.99 0 9.05 3.596 9.115 8.057a.245.245 0 0 1-.14.032Z" fill="#333"></path></g><defs><clipPath id="user_svg__a"><path fill="#fff" transform="translate(1.2 2.4)" d="M0 0h21.6v21.6H0z"></path></clipPath></defs></svg>
+            <p class="t">Profile</p>
+        </a>
+        <a  style="margin-left: 50px;" href="{{url_for('home')}}">
+            <img class="icons" src="https://i.ibb.co/MhmLnGk/wired-flat-146-trolley.gif" alt="">
+            <p class="t" style="margin-left:5px"> Cart </p>
+        </a>
+    </div>
+    <div class="category">
+        <a style="margin-left:60px;" href="{{url_for('home')}}">
+            <p>Women Ethnic</p>
+        </a>
+        <a href="{{url_for('home')}}">
+            <p>Women Western</p>
+        </a>
+        <a href="{{url_for('home')}}">
+            <p>Men</p>
+        </a>
+        <a href="{{url_for('home')}}">
+            <p>Kids</p>
+        </a>
+        <a href="{{url_for('home')}}">
+            <p>Home & Kitchen</p>
+        </a>
+        <a href="{{url_for('home')}}">
+            <p>Beauty & Health</p>
+        </a>
+        <a href="{{url_for('home')}}">
+            <p>Jewellery & Accesories</p>
+        </a><a href="{{url_for('home')}}">
+            <p>Bags & Footwear</p>
+        </a>
+        <a href="{{url_for('home')}}">
+            <p>Electronics</p>
+        </a>
+    </div>
+    
+    {%block content%}
+
+    {%endblock%}
+    <div class="foot">
+        <div class="downloadLinks">
+            <p style="font-size:50px; font-family:sans-serif;">Shop Non-Stop On Meesho</p>
+            <div style="width:550px;">
+                <p style="font-size: 30px; font-family:sans-serif;font-weight:200;color:grey">Trusted by more than 1 Crore Indians
+                    Cash on Delivery | Free Delivery
+                </p>
+            </div>
+            <div class="links">
+                <a href="https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow&pow_click_page_type=PDP&pow_click_page_title=Momease%20Baby%20Cotton%20Soft%20Head%20Shaper%20Anti%20Flat%20Pillow%20With%20Mustard%20Seeds%20For%20Newborn%20Babies%20-%20Blue%20(0-12%20Months)&pow_distinct_id=18f42922e21120f-01c38713c74d1-26001d51-144000-18f42922e22127a" target="_blank">
+                    <img class="dImage" src="{{url_for('static',filename='images/image.png')}}" alt="">
+                </a>
+                <a style="margin-left: 25px;" href="https://apps.apple.com/us/app/meesho-online-shopping/id1457958492" target="_blank">
+                    <img class="dImage" src="{{url_for('static',filename='images/image2.png')}}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="buisnessLinks">
+            <div class="busLinks">
+                <a href="{{url_for('home')}}">Career</a>
+                <a href="{{url_for('home')}}">Become a Supplier</a>
+                <a href="{{url_for('home')}}">Hall of Fame</a>
+                <a href="{{url_for('home')}}">Sitemap</a>
+            </div>
+            <div class="busLinks">
+                <a href="{{url_for('home')}}">Legal and Policies</a>
+                <a href="{{url_for('home')}}">Meesho Tech Blog</a>
+                <a href="{{url_for('home')}}">Notices and Returns</a>
+            </div>
+        </div>
+        <div class="contact">
+            <p style="font-size: 30px;color:black;font-family:sans-serif;font-weight:600;margin:70px 0px 0px 100px; ">Reach out to us</p>
+            <a style="margin-left: 100px;" href="https://www.facebook.com/meeshosupply" target="_blank">
+                <img src="	https://images.meesho.com/images/pow/facebook.webp" alt="">
+            </a>
+            <a href="https://www.instagram.com/meeshoapp/" target="_blank">
+                <img src="https://images.meesho.com/images/pow/instagram.webp" alt="">
+            </a>
+            <a href="https://www.youtube.com/channel/UCaGHIRKYUYlaI_ZAt2hxpjw" target="_blank">
+                <img src="https://images.meesho.com/images/pow/youtube.webp" alt="">
+            </a>
+            <a href="https://www.linkedin.com/company/meesho" target="_blank">
+                <img src="	https://images.meesho.com/images/pow/linkedin.webp" alt="">
+            </a>
+            <a href="https://twitter.com/Meesho_Official/" target="_blank">
+                <img src="https://images.meesho.com/images/pow/twitter.webp" alt="">
+            </a>
+        </div>
+        <div class="address">
+            <p style="font-size: 30px;color:black;font-family:sans-serif;font-weight:600;margin:70px 0px 0px 60px;">Contact Us:</p>
+            <p style="margin-left:50px">
+                Fashnear Technologies Private Limited,
+CIN: U74900KA2015PTC082263
+3rd Floor, Wing-E, Helios Business Park,Kadubeesanahalli Village, Varthur Hobli, Outer Ring Road Bellandur, Bangalore, Bangalore South, Karnataka, India, 560103
+E-mail address: query@meesho.com
+© 2015-2024 Meesho.com
+            </p>
+        </div>
+        
+    </div>
+    {% block moreInfo%}
+        {%endblock%}
+    
+</body>
+<script>
+    document.querySelector('.drop-down').addEventListener('click', function() {
+        var temp=document.querySelector(".moreIn")
+        temp.innerHTML=
+        `   <div class="on">
+                <p style="font-family: sans-serif; font-size:25px;">More about Meesho</p>
+                <button class="drop-down">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" iconSize="28" class="sc-pyfCe hblHQM"><path d="m9.243 7.31-4.929 4.88a1.051 1.051 0 0 0 0 1.5 1.077 1.077 0 0 0 1.514 0l4.177-4.125 4.167 4.124a1.077 1.077 0 0 0 1.514 0 1.051 1.051 0 0 0 0-1.499l-4.929-4.88a1.077 1.077 0 0 0-1.514 0Z" fill="#666"></path></svg>
+                </button>
+            </div>
+            <br>
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">Meesho: Affordable Online Shopping at Your Fingertips</p>
+            <p style="color:#616270; font-family:sans-serif;font-size:25px;margin:10px 10px 10px 10px;">
+                There are many benefits of shopping online. You can take your time and look at different options to find exactly what you want. It's easy to compare prices online and find exactly what you are looking for. And now with Meesho, you can shop for anything you want at the lowest prices in the market. Even if you want to shop for cool gifts for your friends and family, there are many options that you can find on the Internet.
+            </p>
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">A Huge Selection of Products Across All Categories</p>
+            <p style="color:#616270; font-family:sans-serif;font-size:25px;margin:10px 10px 10px 10px;">
+                We have a vast inventory of products ranging from apparel to cosmetics to home utility and kitchen products and more. With over 50 lakh products and 650+ product categories, Meesho is sure to have everything you need. In our latest collections, you will find all the popular items at an affordable price, so you can be confident you're getting the best deal. Whether you're in the market for new clothes, accessories, or just some daily-use items for home, Meesho has what you need.
+            </p>
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">Latest Women's Fashion Is Right Here</p>
+            
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">Women’s Ethnic Wear Collection</p>
+            <p style="color:#616270; font-family:sans-serif;font-size:25px;margin:10px 10px 10px 10px;">
+                When it comes to women's ethnic wear, we have everything you need to find the perfect outfit for any occasion. Whether you're looking for traditional sarees and blouses, or something more modern like suits or casual Kurtis, we have it all. And with our stunning collection of accessories, footwear, and jewellery sets, it's easy to put together a complete look that will turn heads at your next wedding or festive celebration. So come and shop with us today!
+            </p>
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">Western Wear for Women</p>
+            <p style="color:#616270; font-family:sans-serif;font-size:25px;margin:10px 10px 10px 10px;">
+                Meesho is the best place to find fashionable and affordable western wear for women. With a constantly updating inventory of casual, formal, and partywear dresses, jeans, tops, T-shirts, skirts, and more, Meesho has all the latest trending outfits you're looking for--plus funky jewelry and accessories. You'll never have to worry about overspending or not being able to find something you love!
+            </p>  
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">Accessories, Jewellery, and Footwear</p>
+            <p style="color:#616270; font-family:sans-serif;font-size:25px;margin:10px 10px 10px 10px;">
+                You may have your favorite outfit picked out but accessories can really add a sense of style and individuality that make you stand out! With so many types of accessories available, it can be difficult to find the perfect piece for yourself. Fortunately, Meesho has a wide variety of jewellery sets, handbags, belts, heels, casual footwear, watches, etc. With so many options, you'll be sure to find the perfect accessories for any outfit!
+            </p>            
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">Men's Ethnic Wear</p>
+            <p style="color:#616270; font-family:sans-serif;font-size:25px;margin:10px 10px 10px 10px;">
+                Do you need a new Sherwani? Are you heading to a wedding and want to look your best? If you answered yes, look no further than our latest men’s ethnic wear collection! Whether you want a Kurta set, Pajamas, Sherwani set, or any other Indian attire, we have an array of budget-friendly styles that are sure to fit your needs.
+            </p>
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">Largest Collection of Menswear and Accessories</p>
+            <p style="color:#34373f; font-family:sans-serif;font-size:30px;margin-top:50px;font-weight:600;margin-left:10px;">Men’s Western Wear</p>
+            <p style="color:#616270; font-family:sans-serif;font-size:25px;margin:10px 10px 10px 10px;">
+                Do you need a new Sherwani? Are you heading to a wedding and want to look your best? If you answered yes, look no further than our latest men’s ethnic wear collection! Whether you want a Kurta set, Pajamas, Sherwani set, or any other Indian attire, we have an array of budget-friendly styles that are sure to fit your needs.
+            </p>
+        `;
+    });
+    
+
+</script>
+</html>
